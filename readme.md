@@ -8,9 +8,13 @@ JWT was use as the cookie and session management for user's access.
 
 
 ## FrontEnd
-#React JS
+# React JS Create
 npx create-react-app Note-App
+
+# React JS Router
 npm i react-router-dom
+
+# React JS Icon
 npm i react-icons
 
 
