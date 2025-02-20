@@ -1,0 +1,62 @@
+-- Database: NotesDb
+
+-- DROP DATABASE IF EXISTS "NotesDb";
+
+CREATE DATABASE "NotesDb"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+
+======first table======
+-- Table: public.note
+
+-- DROP TABLE IF EXISTS public.note;
+
+CREATE TABLE IF NOT EXISTS public.note
+(
+    id integer NOT NULL DEFAULT nextval('note_id_seq'::regclass),
+    title character varying(200) COLLATE pg_catalog."default",
+    content character varying(2000) COLLATE pg_catalog."default",
+    user_id integer NOT NULL DEFAULT nextval('note_user_id_seq'::regclass),
+    CONSTRAINT note_pkey PRIMARY KEY (id),
+    CONSTRAINT note_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.userlogin (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.note
+    OWNER to postgres;
+
+
+-- Table: public.userlogin
+
+-- DROP TABLE IF EXISTS public.userlogin;
+
+CREATE TABLE IF NOT EXISTS public.userlogin
+(
+    id integer NOT NULL DEFAULT nextval('userlogin_id_seq'::regclass),
+    fname character varying(90) COLLATE pg_catalog."default",
+    lname character varying(90) COLLATE pg_catalog."default",
+    email character varying(90) COLLATE pg_catalog."default",
+    username character varying(90) COLLATE pg_catalog."default",
+    password character varying(200) COLLATE pg_catalog."default",
+    CONSTRAINT userlogin_pkey PRIMARY KEY (id),
+    CONSTRAINT userlogin_email_key UNIQUE (email)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.userlogin
+    OWNER to postgres;
+
+
+==============second table======

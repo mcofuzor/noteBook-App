@@ -1,0 +1,456 @@
+.header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color:#2d2c2cb3;
+    color: #fff;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 0px 1px 5px rgb(48, 48, 48);
+    
+
+   
+
+}
+.header div {
+    justify-content: left;
+    width: 100%;
+    margin: 10px 20px;
+
+}
+.logo img{
+    width: 300px;
+    height: 50px;
+
+}
+.container {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.auth {
+     height: 300px;
+     width: 500px;
+     border: 1px solid black;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px -2px #000f;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    padding: 20px;
+    background-color: rgb(242, 239, 239);
+}
+
+.localauth form{
+    height: 330px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -2px #000f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+   padding: 20px;
+   background-color: rgb(242, 239, 239);
+}
+.input-form input, button {
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+   align-items: center;
+
+
+
+}
+.auth div {
+    height: 50%;
+    padding-top: 20px;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+
+}
+
+   
+
+
+.auth-link {
+    border: 1px solid #000f;
+    width: 40%;
+    color: black;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+    
+
+}
+
+.auth hr {
+
+    border: 2px dashed black;
+    width: 100%;
+    
+
+}
+.quick-link {
+    color: red;
+    font-family: bold ;
+    font-size: 18px;
+    cursor: pointer;
+}
+.content {
+    width: 100%;
+    min-height:100vh;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 2fr 8fr;
+    border-top: 1px solid #454343;
+    margin-top: 20px;
+ 
+
+}
+.navar {
+    background-color: #2d2c2cb3;
+    min-height:100%;
+    height: 100%;
+    width: 100%;
+    margin-left: -45px;
+}
+.navar ul {
+    list-style-type: none;
+    margin: 0;
+
+}
+.navitems li{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navitems .active {
+    background-color: #000f;
+    color: #fff;
+
+
+
+}
+.dashboard {
+    background-color: #ddd3d3;
+    margin-left: -45px;
+
+}
+.upbar {
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 18px;
+
+
+
+
+}
+.userinfo span {
+    color: red;
+    font-weight:  bold ;
+    padding-left: 10px;
+
+}
+.logout {
+    float: right;
+    padding-right: 100px;
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.note-form {
+    display: flex;
+    flex-direction: row;
+    gap: 20ppx;
+    padding-left: 50px;
+    margin-top: 20px;
+
+
+}
+.note-form label {
+    margin-right: 40px;
+    font-size: 19px;
+    padding-bottom: 5px;
+}
+.note-form input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    resize:none
+}
+
+.note-form  textarea {
+   
+    width: 800px;
+    height: 400px;
+   ;
+}
+.note-form button {
+    background-color: #2d2c2cb3;
+    border: 0;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+
+}
+.hold-note {
+    padding-left: 20px;
+    padding-top: 30px;
+    
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 30px;
+    
+
+}
+.notecomp {
+    width: 100%;
+    height: 50vh;
+    border:  2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+   
+}
+.notecomp div {
+    margin-left: 0px;
+
+    width: 100%;
+}
+.note-veiw {
+    background-color: #635d5d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+    height: 10%;
+    cursor: pointer;
+}
+.note-title {
+    padding-top: 0;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    padding-right: -60px!important;  
+    margin: 0;
+    height: 10%;
+
+
+}
+.note-content {
+    height: 50%;
+    padding: 7px;
+    padding-right:60px
+}
+.note-btn {
+    height: 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+
+}
+.note-btn span {
+    border-left: 2px solid black;
+    cursor: pointer;
+
+}
+
+@media  screen and (min-width: 400px) and (max-width: 1200px) {
+
+    .content {
+        width: 100%;
+        min-height:100vh;
+        height: 100%;
+        display:block;
+        /* grid-template-rows: 2fr 5%; */
+        border-top: 1px solid #454343;
+        margin-top: 20px;
+     
+    
+    }
+    .navar {
+        background-color: #2d2c2cb3;
+        min-height:100%;
+        height: 100%;
+        width: 100%;
+    }
+    .navar ul {
+        list-style-type: none;
+        margin: 0;
+        margin-right: -50px;
+
+    
+    }
+    .navitems li{
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .navitems .active {
+        background-color: #000f;
+        color: #fff;
+    
+    
+    
+    }
+    .dashboard {
+        background-color: #ddd3d3;
+    
+    }
+    .upbar {
+        padding-top: 10px;
+        padding-left: 5px;
+        font-size: 18px;
+    
+    
+    
+    
+    }
+    .userinfo span {
+        color: red;
+        font-weight:  bold ;
+    
+    }
+    .logout {
+        display: block;
+        float: right;
+        padding-right: 100px;
+        font-weight: bold;
+        color: red;
+        font-size: 18px;
+        cursor: pointer;
+    
+    }
+    .note-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20ppx;
+        padding-left: 50px;
+        margin-top: 20px;
+    
+    
+    }
+    .note-form label {
+        margin-right: 40px;
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .note-form input, textarea {
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        resize:none
+    }
+
+    .note-form  textarea {
+        width: 80%;
+        height: 200px;
+    }
+    .note-form button {
+        background-color: #2d2c2cb3;
+        border: 0;
+        color: #fff;
+        padding: 20px;
+        font-size: 20px;
+    
+    }
+    .hold-note {
+        padding-left: 20px;
+        padding-top: 30px;
+        margin-left: 80px;
+        margin-right: 0px;
+
+        display: grid;
+        grid-template-columns: 90%;
+        gap: 30px;
+        
+    
+    }
+    .notecomp {
+        width: 100%;
+        min-height: 50vh;
+        border:  2px solid black;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+       
+    }
+    .notecomp div {
+        margin-left: 0px;
+    
+        width: 100%;
+    }
+    .note-veiw {
+        background-color: #635d5d;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        text-align: center;
+        color: #fff;
+        font-size: 19px;
+        height: 10%;
+        cursor: pointer;
+    }
+    .note-title {
+        padding-top: 0;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        padding-right: -60px!important;  
+        margin: 0;
+        height: 10%;
+    
+    
+    }
+    .note-content {
+        height: 45%;
+        padding: 7px;
+    }
+    .note-btn {
+        height: 10%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 0;
+        text-align: center;
+        font-size: 40px;
+    
+    }
+    .note-btn span {
+        border-left: 2px solid black;
+        cursor: pointer;
+    
+    }
+
+}
