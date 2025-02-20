@@ -7,14 +7,14 @@ JWT was use as the cookie and session management for user's access.
 ## Installation
 
 
-```FrontEnd
+## FrontEnd
 #React JS
 npx create-react-app Note-App
 npm i react-router-dom
 npm i react-icons
 
 
-```Backend
+## Backend
 
 # Node JS
 install nodejs
